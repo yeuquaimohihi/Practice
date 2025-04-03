@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acceleration Values:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/x_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X: 0.0" />
+
+        <TextView
+            android:id="@+id/y_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y: 0.0" />
+
+        <TextView
+            android:id="@+id/z_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z: 0.0" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/data_layout">
+
+        <ImageView
+            android:id="@+id/ball_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ball" />
+    </FrameLayout>
+
+</RelativeLayout>
